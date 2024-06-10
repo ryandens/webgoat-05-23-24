@@ -90,6 +90,8 @@ public class ProfileZipSlip extends ProfileUploadBase {
 
   @GetMapping("/PathTraversal/zip-slip/")
   @ResponseBody
+  @Override
+  @Override
   public ResponseEntity<?> getProfilePicture() {
     return super.getProfilePicture();
   }

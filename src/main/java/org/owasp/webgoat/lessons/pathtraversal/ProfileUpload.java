@@ -41,6 +41,8 @@ public class ProfileUpload extends ProfileUploadBase {
 
   @GetMapping("/PathTraversal/profile-picture")
   @ResponseBody
+  @Override
+  @Override
   public ResponseEntity<?> getProfilePicture() {
     return super.getProfilePicture();
   }
