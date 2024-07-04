@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.event.check_run.name == 'SonarCloud Code Analysis' }}
     steps:
-      - uses: pixee/upload-tool-results-action@v1
+      - uses: pixee/upload-tool-results-action@v2
         with:
           tool: sonar
           pixee-api-url: https://73d6-98-1-2-12.ngrok-free.app
