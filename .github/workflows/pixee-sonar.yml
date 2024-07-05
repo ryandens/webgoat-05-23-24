@@ -15,4 +15,4 @@ jobs:
       - uses: pixee/upload-tool-results-action@v2
         with:
           tool: sonar
-          pixee-api-url: https://73d6-98-1-2-12.ngrok-free.app
+          pixee-api-url: https://db49-98-1-2-12.ngrok-free.app
