@@ -3802,7 +3802,7 @@ wysihtml5.browser = (function() {
   },
 
   on: function() {
-    return this.observe.apply(this, wysihtml5.lang.array(arguments).get());
+    return this.observe(...wysihtml5.lang.array(arguments).get());
   },
 
   fire: function(eventName, payload) {
