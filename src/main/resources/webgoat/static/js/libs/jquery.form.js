@@ -77,13 +77,13 @@ var hasProp = !!$.fn.prop;
 // cases "prop" returns the element
 $.fn.attr2 = function() {
     if ( ! hasProp ) {
-        return this.attr.apply(this, arguments);
+        return this.attr(...arguments);
     }
-    var val = this.prop.apply(this, arguments);
+    var val = this.prop(...arguments);
     if ( ( val && val.jquery ) || typeof val === 'string' ) {
         return val;
     }
-    return this.attr.apply(this, arguments);
+    return this.attr(...arguments);
 };
 
 /**
